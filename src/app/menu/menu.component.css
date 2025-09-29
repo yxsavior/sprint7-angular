@@ -1,0 +1,7 @@
+.navbar-toggler-icon {
+  filter: invert(45%) sepia(90%) saturate(500%) hue-rotate(90deg) brightness(90%) contrast(90%);
+}
+
+.dropdown-item {
+  cursor: pointer;
+}
