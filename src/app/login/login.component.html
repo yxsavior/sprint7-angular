@@ -13,13 +13,11 @@
         <form action="#" class="login-form" (ngSubmit)="login()">
           <h2 class="login-title">Boas-Vindas</h2>
 
-          <!-- Campo para Nome de Usuário -->
           <mat-form-field appearance="fill">
             <mat-label>Nome</mat-label>
             <input type="text" [(ngModel)]="nome" name="nome" matInput required />
           </mat-form-field>
 
-          <!-- Campo para Senha -->
           <mat-form-field appearance="fill">
             <mat-label>Senha</mat-label>
             <input 
@@ -35,24 +33,20 @@
             </button>
           </mat-form-field>
 
-          <!-- Checkbox de Login Automático (opcional) -->
           <mat-checkbox name="loginAutomatico">
             Login automático
           </mat-checkbox>
 
-          <!-- Exibição de erro de login -->
           <div *ngIf="loginError" class="error-message" style="color: red; margin-top: 10px;">
             <span>{{ loginError }}</span>
           </div>
 
-          <!-- Botão de Login (com estado de carregamento) -->
           <button mat-raised-button color="primary" [disabled]="isLoggingIn">
             {{ isLoggingIn ? 'Carregando...' : 'Entrar' }}
           </button>
         </form>
       </div>
 
-      <!-- Copyright -->
       <div class="copyright">
         <p>&copy; Ford 2025 todos direitos reservados</p>
       </div>
